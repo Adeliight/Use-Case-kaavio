@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Äänestyssovellus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Äänestyssovellus</h1>
+        </header>
+
+        <main>
+            <section class="grid">
+                <div>
+                    <h3>Äänestä äänestyksessä</h3>
+                    <p><strong>Kysymys:</strong> Mikä on paras koodauskieli?</p>
+                        <div class="form">
+                            <input type="radio" id="opt1" name="lang" value="js">
+                            <label for="opt1">JavaScript</label>
+                        </div>
+                        <div class="form">
+                            <input type="radio" id="opt2" name="lang" value="py">
+                            <label for="opt2">Python</label>
+                        </div>
+                        <div class="form">
+                            <input type="radio" id="opt3" name="lang" value="java">
+                            <label for="opt3">Java</label>
+                        </div>
+                        <button type="submit" class="aaniBtn">Anna ääni</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h3>Selaa äänestystuloksia</h3>
+                    <div class="result-row">
+                        <div class="bar-text"><span>JavaScript</span> <span>5</span></div>
+                    </div>
+                    <div class="result-row">
+                        <div class="bar-text"><span>Python</span> <span>3</span></div>
+                    </div>
+                    <div class="result-row">
+                        <div class="bar-text"><span>Java</span> <span>7</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="admin">
+                <h2>Ylläpitäjän toiminnot</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Luo uusi äänestys</h3>
+                        <div class="form">
+                            <label>Otsikko</label>
+                            <input type="text" placeholder="Syötä kysymys...">
+                        </div>
+                        <div class="form">
+                            <label>Vaihtoehdot (yksi riville)</label>
+                            <textarea placeholder="Vaihtoehto 1, Vaihtoehto 2..."></textarea>
+                        </div>
+                        <button type="submit" class="julkaiseBtn">Julkaise äänestys</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Poista äänestys</h3>
+                        <table>
+                            <tr>
+                                <td>Paras koodauskieli?</td>
+                                <td><button type="submit" class="poistaBtn">Poista</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
